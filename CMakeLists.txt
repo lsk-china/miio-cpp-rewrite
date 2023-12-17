@@ -18,16 +18,3 @@ add_library(miio_cpp_rewrite SHARED
         type_tools.cpp
         type_tools.h
         )
-
-add_executable(test test.cpp
-        Device.cpp
-        Device.h
-        aes.c
-        aes.h
-        md5.cpp
-        md5.h
-        socket_class.cpp
-        socket_class.h
-        type_tools.cpp
-        type_tools.h
-)

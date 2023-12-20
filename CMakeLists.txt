@@ -6,7 +6,7 @@ set(CMAKE_CXX_COMPILER g++)
 set(CMAKE_CXX_STANDARD 17)
 find_package(RapidJSON)
 
-add_library(miio_cpp_rewrite SHARED
+add_library(miio SHARED
         Device.cpp
         Device.h
         aes.c
@@ -17,4 +17,6 @@ add_library(miio_cpp_rewrite SHARED
         socket_class.h
         type_tools.cpp
         type_tools.h
-        )
+        MiioDevice.cpp
+        MiioDevice.h
+)
